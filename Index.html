@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghost Hunters</title>
+    <link rel="stylesheet" href="./css/bootstrap.css"> 
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
+</head>     
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./images/logo.png" alt="brand-logo" height="100"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse fs-4 nav justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item p-2">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item p-2">
+                <a class="nav-link " href="#product">Products</a>
+              </li>
+              <li class="nav-item p-2">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item p-2">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+        </div>
+        <div class="d-flex">
+            <button class="btn btn-outline-light p-2" type="submit" data-bs-target="#Login-one" data-bs-toggle="modal">Login</button>
+            <button class="btn btn-outline-light p-2" type="submit" data-bs-target="#signup-model" data-bs-toggle="modal">Sign Up</button>
+       </div>   
+       <div class="modal " id="Login-one" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content model-color">
+            <div class="modal-header">
+              <h5 class="modal-title">Login</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check
+                  -label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-danger">Submit</button>
+                <button type="reset" class="btn btn-danger">Forget Password</button>
+              </form>
+              </div>            
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>    
+    </div>
+    <div class="modal" id="signup-model" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content model-color">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" required>
+              </div>
+              <div class="mb-3">
+                <label for="confirmPassword" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" id="confirmPassword" required>
+              </div>
+              <button type="submit" class="btn btn-danger">Submit</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+   </nav>
+   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" id="home">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./images/slidder1.jpg" height="700" width="600" class="d-block w-100 img-fluid" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./images/slider2.jpg" height="700" width="600" class="d-block w-100 img-fluid" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./images/slidder3.jpg" height="700" width="600" class="d-block w-100 img-fluid" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+<div class="container " id="product">
+      <h1 class="text-center">Products</h1>
+    <div class="row card-bk ">
+        <div class="col-md-3 ">
+            <div class="card" style="width: 18rem;">
+                <img src="./images/card1.webp" class="card-img-top img-fluid" alt="The Nun">
+                <div class="card-body card-bk">
+                  <h5 class="card-title">The Nun</h5>
+                  <p class="card-text">The Nun is a 2018 American gothic supernatural horror film directed by Corin Hardy and written by Gary Dauberman, from a story by Dauberman and James Wan</p> 
+                  <a href="https://www.primevideo.com/detail/The-Nun/0KEP9B1F1BVNMR2QRTJ9CUKY02" class="btn btn-outline-danger">Watch Now</a>
+                </div>
+             </div>
+        </div>
+        <div class="col-md-3 ">
+          <div class="card" style="width: 18rem;">
+              <img src="./images/card2.jpg" class="card-img-top img-fluid" alt="The Nun">
+              <div class="card-body card-bk">
+                <h5 class="card-title">The Conjuring</h5>
+                <p class="card-text">The Conjuring is a 2013 American supernatural horror film directed by James Wan and written by Chad Hayes and Carey W. Hayes.</p> 
+                <a href="https://www.primevideo.com/detail/The-Conjuring-2013/0GDPCQ65PO0YNZFG2JOQAKLVAF" class="btn btn-outline-danger">Watch Now</a>
+              </div>
+           </div>
+      </div>
+      <div class="col-md-3 ">
+        <div class="card" style="width: 18rem;">
+            <img src="./images/card3.jpg" class="card-img-top img-fluid" alt="The Nun">
+            <div class="card-body card-bk">
+              <h5 class="card-title">The Conjuring 2</h5>
+              <p class="card-text">The Conjuring 2 (known in the United Kingdom as The Conjuring 2: The Enfield Case)[4][5] is a 2016 American supernatural horror film directed by James Wan.</p> 
+              <a href="https://www.primevideo.com/detail/The-Conjuring-2/0FJBULWVB7P7NJH31J1OBFMDO9" class="btn btn-outline-danger">Watch Now</a>
+            </div>
+         </div>
+    </div>
+    <div class="col-md-3 ">
+      <div class="card" style="width: 18rem;">
+          <img src="./images/card4.jpg" class="card-img-top img-fluid" alt="The Nun">
+          <div class="card-body card-bk">
+            <h5 class="card-title">The Nun 2</h5>
+            <p class="card-text">The Nun II is a 2023 American gothic supernatural horror film directed by Michael Chaves, with a screenplay written by Ian Goldberg</p> 
+            <a href="https://www.primevideo.com/detail/The-Nun-II/0LNNOSVAXG0IFKIB0CAS95DNAG" class="btn btn-outline-danger">Watch Now</a>
+          </div>
+       </div>
+    </div>
+    <div class="col-md-3 ">
+      <div class="card" style="width: 18rem;">
+          <img src="./images/card5.avif" class="card-img-top img-fluid" alt="The Nun">
+          <div class="card-body card-bk">
+            <h5 class="card-title">The Annabelle 2</h5>
+            <p class="card-text">Annabelle: Creation is a 2017 American supernatural horror film directed by David F. Sandberg, written by Gary Dauberman and produced by Peter Safran and James Wan.</p> 
+            <a href="https://www.primevideo.com/detail/Annabelle-Creation/0LKV9QFH3ZD0HVUCAG8ECMTC8E" class="btn btn-outline-danger">Watch Now</a>
+          </div>
+       </div>
+    </div>
+    <div class="col-md-3 ">
+      <div class="card" style="width: 18rem;">
+          <img src="./images/card6.jpg" class="card-img-top img-fluid" alt="The Nun">
+          <div class="card-body card-bk">
+            <h5 class="card-title">It</h5>
+            <p class="card-text">It (titled onscreen as It Chapter One) is a 2017 American supernatural horror film directed by Andy Muschietti and written by Chase Palmer, Cary Fukunaga, and Gary Dauberman</p> 
+            <a href="https://www.primevideo.com/detail/It/0IRMXMZIU9ST0QQBV9UZRPEBM3" class="btn btn-outline-danger">Watch Now</a>
+          </div>
+       </div>
+    </div>
+    <div class="col-md-3 ">
+      <div class="card" style="width: 18rem;">
+          <img src="./images/card7.jpg" class="card-img-top img-fluid" alt="The Nun">
+          <div class="card-body card-bk">
+            <h5 class="card-title">Sinister</h5>
+            <p class="card-text">Sinister is a 2012 American supernatural horror film directed by Scott Derrickson, and written by C. Robert Cargill and Derrickson.</p> 
+            <a href="https://www.primevideo.com/detail/Sinister/0IE43S9D8W477O0Z2KP8J5XOMO" class="btn btn-outline-danger">Watch Now</a>
+          </div>
+       </div>
+    </div>
+    <div class="col-md-3 ">
+      <div class="card" style="width: 18rem;">
+          <img src="./images/card8.jpg" class="card-img-top img-fluid" alt="The Nun">
+          <div class="card-body card-bk">
+            <h5 class="card-title">Evil Dead rises</h5>
+            <p class="card-text">Evil Dead Rise is a 2023 American supernatural horror film written and directed by Lee Cronin.</p> 
+            <a href="#" class="btn btn-outline-danger">Watch Now</a>
+          </div>
+       </div>
+    </div>
+  </div> 
+</div> 
+<div class="container p-3" id="about">
+    <h1 class="text-center">About</h1>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="./images/about.webp" height="700" alt="about" class="img-fluid" >
+        </div>
+        <div class="col-md-6">
+            <h2>Ghost Hunters</h2>
+            <p>Ghost Hunters is an American paranormal reality television series. The original series aired from October 6, 2004 until October 26, 2016 on Syfy. The original program spanned eleven seasons with 230 episodes, not including 10 specials. The series was revived in early 2019 and aired its twelfth season of 11 episodes, not including 2 specials, from August 21, 2019 to October 30, 2019. The revival was initially released on A&E and later moved to the Travel Channel. The program features paranormal investigators Jason Hawes and Grant Wilson, who investigate places that are reported to be haunted. The two originally worked as plumbers for Roto-Rooter as a day job while investigating locations at night. Since the show's success, the series now takes precedence in their lives, but they are still honorary employees with the company and continue to do jobs for them if time permits.</p>
+            <a href="https://www.primevideo.com/detail/Evil-Dead-Rise/0OMDWQANARWHQV9PINEMDCNT03" class="btn btn-outline-danger">Watch Now</a>
+        </div>
+    </div>
+</div>
+<div class="container p-3 " id="contact">
+    <h1 class="text-center">Contact</h1>
+    <div class="row">
+        <div class="col-md-6">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check
+                  -label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-danger">Submit</button>
+              </form>
+        </div>
+        <div class="col-md-6 text-center">
+            <h2>Address</h2>
+          <div class="d-flex justify-content-end ">
+            <p>Ghost Hunters<br>
+                1234 Main St<br>
+                Springfield, IL 62701<br>
+                United States</p>
+          </div>
+        </div>
+    </div>
+</div>
+        
+</body>
+</html>
