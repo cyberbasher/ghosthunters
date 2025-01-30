@@ -9,3 +9,18 @@ body{
 .card-bk{
     background-color: black;
 }
+.card-size{
+    height: 300px;
+}
+.card-style{
+    width: 300px;
+    padding: 20px;
+    background: black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+.card-style:hover{
+    box-shadow: 0 8px 16px rgba(255, 0, 0, 0.6);
+    transform: translateY(-5px);
+}
